@@ -9,6 +9,7 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
-
+.controller('View1Ctrl', [function($scope, $http) {
+	$http.get("comics.json").then(function(resposes) {$scope.comics = response.data.comics;});
+	$scope.id = comics.id;
 }]);
