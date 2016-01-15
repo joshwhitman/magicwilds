@@ -1,0 +1,7 @@
+<p>This is the partial for view 1. asfasfasfasf</p>
+<div ng-controller="View1Ctrl">
+{{ age }}
+	<div ng-repeat="comic in comics">
+	{{ comic.title }}
+</div>
+</div>
