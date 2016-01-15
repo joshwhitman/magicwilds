@@ -1,5 +1,5 @@
-<div ng-controller="ComicCtrl as comicPage">
-{{age}}
+<div ng-controller="ComicCtrl as comicCtrl">
+{{comicCtrl.age}}
 	<div ng-repeat="comic in comics">
 	{{ comic.title }}
 <img ng-src="{{comic.url}}" />

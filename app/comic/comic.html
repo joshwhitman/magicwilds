@@ -1,6 +1,6 @@
-<div ng-controller="ComicCtrl">
-{{age}}
-	<div ng-repeat="comic in comics">
+<div ng-controller="ComicCtrl as comicCtrl">
+{{comicCtrl.age}}
+	<div ng-repeat="comic in comicCtrl.comics">
 	{{ comic.title }}
 <img ng-src="{{comic.url}}" />
 </div>

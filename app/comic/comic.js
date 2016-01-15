@@ -9,9 +9,9 @@ angular.module('myApp.comic', ['ngRoute'])
   });
 }])
 
-.controller('ComicCtrl', function($scope) {
- $scope.age = 29;
- $scope.comics = [{
+.controller('ComicCtrl', function() {
+ this.age = 29;
+ this.comics = [{
 				id:'1',
 				url:'/comics/page1.jpg',
 				title:'Page 1',

@@ -9,6 +9,6 @@ angular.module('myApp.blogModule', ['ngRoute'])
   });
 }])
 
-.controller('BlogCtrl', function($scope) {
- $scope.content = 55;
-});
+.controller('BlogCtrl', function() {
+ this.content = 55;
+})
