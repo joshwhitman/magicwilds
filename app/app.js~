@@ -4,8 +4,9 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.comic',
-  'myApp.blog',
-  'myApp.version'
+  'myApp.blogModule',
+  'myApp.version',
+  'myApp.tumblrServices'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/comic'});
