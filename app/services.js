@@ -1,6 +1,6 @@
 'use strict';
 
-myApp.factory('tumblrService', function() {
+myApp.factory('tumblrService', function($http) {
 	return{
 		getBlogPosts: function(offset){ //get latest posts from blog
 			$http.jsonp 'http://api.tumblr.com/v2/blog/magicwildsblog.tumblr.com?api_key=ZiTmMsK0ZqVJXhSyCCrjc12oe0dI2ZZXngiSeJ5hQSn3ZQ96Pa&callback=JSON_CALLBACK'

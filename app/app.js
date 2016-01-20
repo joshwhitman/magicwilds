@@ -5,7 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.comic',
   'myApp.blogModule',
-  'myApp.version',
+  'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/comic'});
